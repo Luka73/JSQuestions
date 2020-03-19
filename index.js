@@ -152,7 +152,6 @@ function executaJsQ8() {
     var estacao = 0;
 
     var msg = document.getElementById("msg");
-    msg.classList.add("text-success");
 
     switch (mes) {
         case 4:
@@ -167,13 +166,39 @@ function executaJsQ8() {
         case 11: 
             estacao = "Primavera";
             break;
-        case 4:
-        case 5: 
-            msg.innerHTML = "No dia " + dia + " do mês " + mes + " é Outono" ;
+        case 1:
+        case 2: 
+            estacao = "Verão";
             break;
-
-
+        case 3:
+            estacao = (dia < 20) ? "Verão" : "Outono";
+            break;
+        case 6:
+            estacao = (dia < 20) ? "Outono" : "Inverno";
+            break;
+        case 9:
+            estacao = (dia < 22) ? "Inverno" : "Primavera";
+            break;
+        case 12:
+            estacao = (dia < 22) ? "Primavera" : "Verão";
+            break;
+        default:
+            msg.className = "";
+            msg.innerHTML = "Preencha as informações corretamente";
+            msg.classList.add("text-danger");
+            break;
     }
 
-    msg.innerHTML = "No dia " + dia + " do mês " + mes + " é Outono" ;
+    msg.className = "";
+
+    if (dia > 31) {
+        msg.innerHTML = "O dia não pode ser maior que 31";
+        msg.classList.add("text-danger");
+    } else {
+        
+        msg.innerHTML = "No dia " + dia + " do mês " + mes + " é " + estacao;
+        msg.classList.add("text-success");
+    }
+
+    
 }
