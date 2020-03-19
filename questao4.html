@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Curso de Javascript</title>
+</head>
+<body>
+    <div class="questao3">   
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h3>QUESTÃO 4</h3>
+                    <p>Faça um algoritmo que verifique se o usuário tem direito a pagar meia entrada em um evento e então exiba o valor final a ser pago.</p>
+                    <p>O usuário deve atender a pelo menos uma das condições a seguir: </p>
+                    <ul>
+                        <li>Ser menor de 21 anos</li>
+                        <li>Ser estudante</li>
+                        <li>Ter 65 anos ou mais</li>
+                    </ul>
+                    <p>Responda as perguntas a seguir: </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p><b>Você é estudante? </b></p>
+                    <input type="radio" name="estudante" value="S"> Sim
+                    <input type="radio" name="estudante" value="N" class="ml-2"> Não
+                </div>
+                <div class="col-6">
+                    <p><b>Qual a sua idade? </b></p>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <input type="number" class="form-control" id="idade" name="idade">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button id="enviar" class="btn btn-success" onclick="executaJsQ4()">Enviar</button>
+
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <p id="msg"></p>
+                </div>
+            </div>
+            <div class="mt-2">
+                <a href="questao3.html" class="mr-2">Próxima Anterior</a>
+                <a href="questao5.html">Próxima questão</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

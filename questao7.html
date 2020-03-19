@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Curso de Javascript</title>
+</head>
+<body>
+    <div class="questao3">   
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h3>QUESTÃO 7</h3>
+                    <p>Faça um programa que receba um mês e um ano e diga quantos dias existem naquele mês, considerando anos bissextos. </p>
+                    <img class="bissexto" src="https://i.postimg.cc/Bn2FV8NG/ano-bissexto.jpg" alt="">
+                    <p><b>Atenção: o ano de 1900 não é bissexto, mas 2000 é! </b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p><b>Informe o ano: </b></p>
+                    <input type="number" class="form-control" id="ano" name="ano">
+                </div>
+                <div class="col-6">
+                    <p><b>Informe o mês </b></p>
+                    <select name="mes" id="mes" class="form-control">
+                        <option value="0" selected disabled> - Selecione -</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <button id="enviar" class="btn btn-success" onclick="executaJsQ7()">Enviar</button>
+
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <p id="msg"></p>
+                </div>
+            </div>
+            <div class="mt-2">
+                <a href="questao6.html" class="mr-2">Próxima Anterior</a>
+                <a href="questao8.html">Próxima questão</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

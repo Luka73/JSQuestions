@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Curso de Javascript</title>
+</head>
+<body>
+    <div class="questao3">   
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h3>QUESTÃO 8</h3>
+                    <p>As estações do ano são divididas em quatro períodos e se caracterizam pela variação da luz solar que atinge a superfície da Terra de diferentes formas de acordo com cada época do ano. As estações do ano são divididas em quatro e essas são classificadas dessa forma de acordo com os padrões climáticos que possuem. </p>
+                    <p>Faça um programa que leia um dia e um mês e diga qual a estação do ano.</p>
+                    <img class="estacoes" src="https://i.postimg.cc/RFWKGgDg/estacoes-do-ano.jpg" alt="">
+                    <p><b>Atenção: Considere as datas da imagem.</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p><b>Informe o ano: </b></p>
+                    <input type="number" class="form-control" id="ano" name="ano">
+                </div>
+                <div class="col-6">
+                    <p><b>Informe o mês </b></p>
+                    <select name="mes" id="mes" class="form-control">
+                        <option value="0" selected disabled> - Selecione -</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <button id="enviar" class="btn btn-success" onclick="executaJsQ8()">Enviar</button>
+
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <p id="msg"></p>
+                </div>
+            </div>
+            <div class="mt-2">
+                <a href="questao6.html" class="mr-2">Próxima Anterior</a>
+                <a href="questao8.html">Próxima questão</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
