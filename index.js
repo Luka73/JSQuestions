@@ -116,9 +116,11 @@ function executaJsQ7() {
     msg.classList.add("text-success");
 
     var dias = 28;
+    var isBissexto = false;
 
     if ((ano % 4 == 0) && (ano % 100 != 0) || (ano % 400 == 0)) {
         dias = 29;
+        isBissexto = true;
     }
 
     switch (mes) {
@@ -129,20 +131,24 @@ function executaJsQ7() {
         case 8:
         case 10:
         case 12:
-            msg.innerHTML = "O mês " + mes + " tem 31 dias no anos de " + ano + ".";
+            msg.innerHTML = "O mês " + mes + " tem 31 dias no ano de " + ano + ".";
             break;
         case 4:
         case 6: 
         case 9:
         case 11:
-            msg.innerHTML = "O mês " + mes + " tem 30 dias no anos de " + ano + ".";
+            msg.innerHTML = "O mês " + mes + " tem 30 dias no ano de " + ano + ".";
             break;
         case 2:
-            msg.innerHTML = "O mês " + mes + " tem " + dias + " dias no anos de " + ano + ".";
+            msg.innerHTML = "O mês " + mes + " tem " + dias + " dias no ano de " + ano + ".";
             break;
         default:
             msg.innerHTML = "Insira informações válidas";
             break;
+    }
+    
+    if(isBissexto) {
+        msg.innerHTML += "<br> O ano " + ano + " é bissexto";
     }
 }
 
